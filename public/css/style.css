@@ -254,7 +254,7 @@
       padding: 0;
   
     }
-  
+  /*
     .barra-busqueda>.buscador {
       font-size: 10px;
       padding: 1px;
@@ -266,21 +266,15 @@
       border: 0.5px solid var(--color-grisOscuro);
       border-radius: 3px;
     }
-  
+  */
     .barra-busqueda {
-      width: auto;
-      display: flex;
-      gap: 1px;
-      position: inherit;
-      height: 15px;
-      margin: 0;
+      width: 30%;
+     
     }
   
     .buscador-input{
-      width: 100%;
-      padding: 2px;
-      border-radius: 2px;
-      font-size: 12px;
+      width:100%;
+      
     }
   
     .compra {
@@ -390,7 +384,7 @@
    
       font-size: 14px;
       gap: 18px;
-   
+   /*
     }
     .barra-busqueda>.buscador {
       font-size: min(1.8vw, 14px);
@@ -412,6 +406,7 @@
   
       font-size: min(1.8vw, 14px);
     }
+    */
   
     .compra {
       font-size: min(1.8vw, 14px);
