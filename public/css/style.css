@@ -126,12 +126,9 @@
   .descripcion {
     font-size: 16px;
     color: var(--color-grisOscuro);
-    display: none;
+    visibility: hidden;
   }
   
-  .descripcion:hover {
-    display: block;
-  }
   
   .articulos {
     padding: 10px;
@@ -301,13 +298,7 @@
       font-size: 12px;
       gap: 12px;
     }
-  
-    .descripcion {
-      display: block;
-      font-size: min(14px, 16px);
-      margin-top: 10px;
-    }
-  
+ 
     .articulos {
       width: 48%;
       margin: 10px auto;
@@ -424,24 +415,24 @@
     }
   
     .precios{
-      width: 40%;
+      width: auto;
+      font-size: 14px;
+      text-align: start;
     }
     .descuentos{
-      width: 60%;
+      width: auto;
+      font-size: 14px;
     }
   
-    .precio-a{
-      width: 50%;
-    }
+    
   
     .descripcion {
-      display: none;
-      transition-property: display;
-      transition-duration: 10s;
+      visibility: hidden;
+      font-size: 16px;
     }
   
     .articulos:hover .descripcion {
-      display: block;
+     visibility: visible;
   
     }
   
@@ -502,4 +493,15 @@
   
   }
   
+  @media (min-width:950px){
+    
+    .precios{
+      width:40%;
+      font-size: 16px;
+    }
+    .descuentos{
+      width: 60%;
+      font-size: 16px;
+    }
   
+  }
